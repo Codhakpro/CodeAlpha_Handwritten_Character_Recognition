@@ -91,23 +91,33 @@ CodeAlpha_Handwritten_Character_Recognition/
 ├── requirements.txt
 └── README.md
 ```
+
 # How to Run
+
 1. Install the required packages
+
 ``` 
 pip install -r requirements.txt
 ```
+
 2. Open the Jupyter Notebook
+
 ```
 jupyter notebook
 ```
+
 Open:
+
 ```
 handwritten_character_recognition.ipynb
 ```
+
 3. Run the notebook
+
 ```
 Run the cells in order to:
 ```
+
 1. Load the MNIST dataset. 
 2. Prepare the data. 
 3. Build the CNN. 
@@ -119,12 +129,14 @@ Run the cells in order to:
 4. Test a Custom Handwritten Digit. 
 
 The trained model can also be tested using the custom image included in the project:
+
 ```
 second-image.jpg
 ```
+
 The image is loaded, converted to grayscale, inverted, resized to 28 × 28 pixels, and passed to the trained CNN model for prediction.
 
-# Results
+## Results
 
 The trained CNN successfully learned to recognize handwritten digits from the MNIST dataset.
 
@@ -134,7 +146,7 @@ The project also demonstrates how a trained model can be used to make prediction
 
 This project demonstrates a complete image classification workflow using a Convolutional Neural Network and PyTorch. It covers dataset preparation, model development, training, evaluation, visualization, model saving, and testing the trained model with a custom handwritten image.
 
-# CodeAlpha Internship
+## CodeAlpha Internship
 
 This project was completed as part of the CodeAlpha Machine Learning Internship.
 

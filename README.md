@@ -18,6 +18,7 @@ The model is trained using the MNIST dataset, which contains thousands of handwr
 - Matplotlib
 - Scikit-learn
 - Jupyter Notebook
+- Streamlit
 
 ## Dataset
 
@@ -64,6 +65,21 @@ The project includes:
 
 The confusion matrix helps show how well the model distinguishes between the different digit classes.
 
+## Streamlit Web App
+
+The trained model is also available through an interactive Streamlit web application.
+
+**Live App:** https://codhak-handwritten-character-recognition.streamlit.app/
+
+The web app allows users to:
+
+- Upload an image of a handwritten digit
+- Preview the uploaded image
+- Run the trained CNN model
+- View the predicted digit
+- View the model's confidence
+- View prediction probabilities for all 10 digits
+
 ## Custom Handwritten Digit Test
 
 In addition to the MNIST test dataset, the trained model was tested using a custom handwritten digit image.
@@ -85,39 +101,57 @@ CodeAlpha_Handwritten_Character_Recognition/
 │   └── MNIST dataset files
 │
 ├── handwritten_character_recognition.ipynb
+├── app.py
 ├── handwritten_character_cnn.pth
 ├── second-image.jpg
 ├── results.txt
 ├── requirements.txt
 └── README.md
 ```
-
 # How to Run
 
-1. Install the required packages
+## Run the Streamlit Web App
 
-``` 
+1. Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Start the Streamlit application:
+
+```bash
+streamlit run app.py
+```
+
+3. Open the local URL provided by Streamlit in your browser.
+
+### Live Deployment
+
+The application is also deployed online:
+
+**https://codhak-handwritten-character-recognition.streamlit.app/**
+
+# Notebook
+1. Install the required packages
+```bash
 pip install -r requirements.txt
 ```
 
 2. Open the Jupyter Notebook
-
-```
+```bash
 jupyter notebook
 ```
 
 Open:
-
-```
+```text
 handwritten_character_recognition.ipynb
 ```
 
 3. Run the notebook
-
 ```
 Run the cells in order to:
 ```
-
 1. Load the MNIST dataset. 
 2. Prepare the data. 
 3. Build the CNN. 
@@ -129,14 +163,12 @@ Run the cells in order to:
 4. Test a Custom Handwritten Digit. 
 
 The trained model can also be tested using the custom image included in the project:
-
 ```
 second-image.jpg
 ```
-
 The image is loaded, converted to grayscale, inverted, resized to 28 × 28 pixels, and passed to the trained CNN model for prediction.
 
-## Results
+# Results
 
 The trained CNN successfully learned to recognize handwritten digits from the MNIST dataset.
 
@@ -146,7 +178,7 @@ The project also demonstrates how a trained model can be used to make prediction
 
 This project demonstrates a complete image classification workflow using a Convolutional Neural Network and PyTorch. It covers dataset preparation, model development, training, evaluation, visualization, model saving, and testing the trained model with a custom handwritten image.
 
-## CodeAlpha Internship
+# CodeAlpha Internship
 
 This project was completed as part of the CodeAlpha Machine Learning Internship.
 
